@@ -11,14 +11,14 @@ Answer: When the program divide a number by zero.
 Answer: Can, see below.
 """
 
-valid_input = False
-while not valid_input:
+is_valid_input = False
+while not is_valid_input:
     try:
         numerator = int(input("Enter the numerator: "))
         denominator = int(input("Enter the denominator: "))
         fraction = numerator / denominator
         print(fraction)
-        valid_input = True
+        is_valid_input = True
     except ValueError:
         print("Numerator and denominator must be valid numbers!")
     except ZeroDivisionError:
