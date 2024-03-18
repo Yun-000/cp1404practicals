@@ -6,7 +6,7 @@ Actual:   30 minutes
 
 
 def main():
-    filename = '/Users/luol./Downloads/wimbledon.csv'
+    filename = 'wimbledon.csv'
     data = read_file(filename)
     champion_to_win = find_champion(data)
     countries = find_country(data)
